@@ -1,6 +1,7 @@
 import React from "react";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
+import Skeleton from "@mui/material/Skeleton";
 
 function Row({ title, img, rating }) {
   return (
@@ -8,7 +9,7 @@ function Row({ title, img, rating }) {
       <div className="rounded-lg w-[70%] overflow-hidden ml-10 ">
         <img
           alt="content"
-          className="object-cover object-center h-full w-full"
+          className="object-cover object-center h-full w-full shadow-md"
           src={`https://image.tmdb.org/t/p/original${img}`}
         />
       </div>
