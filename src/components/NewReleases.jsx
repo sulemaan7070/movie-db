@@ -4,6 +4,7 @@ import axios from "axios";
 import { Paper, Button } from "@mui/material";
 import CarouItem from "./CarouItem";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function NewReleases() {
   const [movies, setMovies] = useState([]);
@@ -38,6 +39,7 @@ function NewReleases() {
           );
         })}
       </Carousel>
+      <Footer />
     </>
   );
 }

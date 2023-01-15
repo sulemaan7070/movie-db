@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Row from "./Row";
 import Header from "./Header";
+import Footer from "./Footer";
 function WhatsHot() {
   const [movies, setMovies] = useState([]);
   const popularMovies =
@@ -36,6 +37,7 @@ function WhatsHot() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

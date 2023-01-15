@@ -6,7 +6,7 @@ import Skeleton from "@mui/material/Skeleton";
 
 function CarouItem({ poster, backDrop, info, title, rating }) {
   return (
-    <div className="flex justify-center items-center flex-col w-[75%] mx-auto">
+    <div className="flex justify-center items-center flex-col w-[75%] mx-auto min-h-screen">
       {!backDrop ? (
         <Skeleton variant="rectangular" width={1000 - 2} height={400} />
       ) : (
