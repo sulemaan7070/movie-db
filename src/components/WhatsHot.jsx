@@ -21,9 +21,10 @@ function WhatsHot() {
   return (
     <>
       <Header />
+      <h1 className="text-center xl:text-4xl p-4">What's Hot🔥</h1>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div className="container px-5 pb-24 pt-12 mx-auto">
+          <div className="flex flex-wrap sm:-m-4 -mx-4 ">
             {movies.map((movie, id) => {
               return (
                 <Row

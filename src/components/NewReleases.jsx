@@ -25,6 +25,7 @@ function NewReleases() {
   return (
     <>
       <Header />
+      <h1 className="text-center xl:text-4xl p-4">New releases🍿</h1>
       <Carousel>
         {movies.map((movie, id) => {
           return (
