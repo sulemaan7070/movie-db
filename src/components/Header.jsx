@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [selected, setSelected] = useState("");
@@ -13,28 +13,20 @@ function Header() {
           <span className=" text-xl">Movie-db</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center xl:mr-28">
-          <Link
+          <NavLink
             onClick={() => setSelected("newMovies")}
             to="/new-releases"
-            className={
-              selected === "newMovies"
-                ? "mr-5 hover:text-gray-900 cursor-pointer bg-orange-400 rounded-md p-1"
-                : "mr-5 hover:text-gray-900 cursor-pointer"
-            }
+            className="mr-5 hover:text-gray-900 cursor-pointer"
           >
             New movies
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             onClick={() => setSelected("whatsHot")}
             to="/whatshot"
-            className={
-              selected === "whatsHot"
-                ? "mr-5 hover:text-gray-900 cursor-pointer bg-orange-400 rounded-md p-1"
-                : "mr-5 hover:text-gray-900 cursor-pointer"
-            }
+            className="mr-5 hover:text-gray-900 cursor-pointer"
           >
             What's hot
-          </Link>
+          </NavLink>
         </nav>
       </div>
       <Link></Link>
